@@ -1,0 +1,58 @@
+.app-list {
+  border-top: 2px solid gray;
+  background-color: white;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &-title {
+    font-size: 24px;
+  }
+
+  &-text {
+    margin: 10px auto;
+    width: 90%;
+    padding: 5px;
+    font-weight: 700;
+    height: 110px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    font-size: 18px;
+    resize: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline: none;
+      background-color: rgba(163, 238, 163, 0.3);
+      border: 2px solid rgba(55, 191, 55, 0.2);
+    }
+  }
+
+  &-btns {
+    height: 35px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &-save {
+    background-color: cornflowerblue;
+    margin-right: 5px;
+
+    &:hover {
+      background-color: #4770b9;
+    }
+  }
+
+  &-cancel {
+    background-color: lightcoral;
+
+    &:hover {
+      background-color: #c75555;
+    }
+  }
+}
